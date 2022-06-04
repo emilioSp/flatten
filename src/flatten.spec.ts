@@ -1,7 +1,8 @@
-import flatten from '../src/flatten';
+import flatten from './flatten';
 
 describe('Test suite', () => {
   test('Error handling', () => {
+    // @ts-ignore
     expect(() => flatten(undefined)).toThrow();
   });
 
